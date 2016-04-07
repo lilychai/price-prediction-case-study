@@ -1,4 +1,4 @@
-# Regression Case Study
+# Regression Case Study: Predict Equipment Auction Price
 
 **Goal**: predict the sale price of a particular piece of heavy equipment at auction
 
