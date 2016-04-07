@@ -1,0 +1,611 @@
+## for mf in np.arange(0.3, 0.8, 0.1):
+##    for md in [11, 13, 17, 19, 21]:
+
+
+In [3]: run price_predictor.py
+Loading Files:
+  Inflation.csv...
+  Train.csv...
+      (time: 4.53176 s)
+Grid search...
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.24199 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 0.02594 s)
+>> RMS log error: 0.484006222723
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.17677 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 0.02325 s)
+>> RMS log error: 0.476685793111
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.20064 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 0.02221 s)
+>> RMS log error: 0.480406987101
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.17400 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 0.02344 s)
+>> RMS log error: 0.476983694283
+BEST FEATURES:
+    max_features  0.2
+       max_depth  13
+   least RMS log error: 0.476685793111
+      (time: 5.29524 s)
+   (overall time: 5.29525 s)
+
+In [4]: run price_predictor.py
+Loading Files:
+  Inflation.csv...
+  Train.csv...
+      (time: 4.59033 s)
+Grid search...
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 27.99032 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.35164 s)
+>> RMS log error: 0.274472088417
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 28.89193 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.46107 s)
+>> RMS log error: 0.257326080351
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 30.89762 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.70798 s)
+>> RMS log error: 0.257757830691
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 33.22419 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.77499 s)
+>> RMS log error: 0.25763919167
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 31.39804 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.81379 s)
+>> RMS log error: 0.258688321006
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 29.84878 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.34495 s)
+>> RMS log error: 0.259045183042
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 31.13263 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.46856 s)
+>> RMS log error: 0.255101664598
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 33.13213 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.71824 s)
+>> RMS log error: 0.256719008815
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 33.61577 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.80667 s)
+>> RMS log error: 0.260249456978
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 33.79734 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.83505 s)
+>> RMS log error: 0.26129689999
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 32.62261 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.37076 s)
+>> RMS log error: 0.258163255616
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 33.86579 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.49954 s)
+>> RMS log error: 0.257308003261
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 35.94314 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.71711 s)
+>> RMS log error: 0.258015505368
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.58798 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.81715 s)
+>> RMS log error: 0.261474023468
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.85545 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.84444 s)
+>> RMS log error: 0.262077799121
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 32.46161 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.34799 s)
+>> RMS log error: 0.257660037288
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 34.00411 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.52555 s)
+>> RMS log error: 0.256714416334
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.16479 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.71107 s)
+>> RMS log error: 0.258015505368
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.53826 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.76857 s)
+>> RMS log error: 0.261474023468
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.80113 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.81656 s)
+>> RMS log error: 0.262077799121
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 34.93477 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.34543 s)
+>> RMS log error: 0.259173782876
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 36.68892 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.49805 s)
+>> RMS log error: 0.260205343433
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 39.42421 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.72176 s)
+>> RMS log error: 0.262705917093
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 40.99894 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.79864 s)
+>> RMS log error: 0.263391131278
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 40.18493 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 1.82670 s)
+>> RMS log error: 0.2644238563
+
+
+BEST FEATURES:
+    max_features  0.7
+       max_depth  21
+   least RMS log error: 0.255101664598
+      (time: 926.26178 s)
+   (overall time: 926.26179 s)

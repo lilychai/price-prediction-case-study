@@ -1,0 +1,31 @@
+In [55]: run price_predictor.py
+Loading Files:
+  Inflation.csv...
+  Train.csv...
+  test.csv...
+  test_soln.csv...
+      (time: 4.45078 s)
+Progress:
+  creating predictor...
+       base estimator: Pipeline
+               scaler: MinMaxScaler
+                model: RandomForestRegressor
+          ref columns: ['ProductGroup', 'fiBaseModel', 'ModelID']
+  fitting model...
+     averaging method: bootstrap_avg(mean, n_iter=10)
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 25.48443 s)
+  predicting result...
+              feature: __avg_price__
+              feature: __age_price_per_age__
+              feature: adusted_age * __age_price_per_age__
+              feature: ProductGroup dummies
+      (time: 0.28461 s)
+>> RMS log error: 0.262629550817
+   (overall time: 30.25984 s)
+
+
+## using n_estimators=50, max_features=13, max_depth=0.4
